@@ -7,9 +7,7 @@ class Solution:
             if n not in memo:
                 memo[n] = dp(n - 2, memo) + dp(n - 1, memo)
             return memo[n]
-        
         return dp(n, {})
-        
 
 
 # n = 3
@@ -20,8 +18,6 @@ class Solution:
 # n == 1 is a base case
 # n == 0 is also a base case
 
-        
-        
 if __name__ == "__main__":
     sol = Solution()
     print(sol.climbStairs(4))
